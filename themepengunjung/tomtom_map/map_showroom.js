@@ -34,7 +34,11 @@ var routeOnMapView = tomtom.routeOnMap({
     serviceOptions: {
         instructionsType: 'tagged',
         language: "id-ID"
-    }
+    },
+    routeStyle: {
+        weight: 8,
+        opacity: 1
+      }
 }).addTo(map);
 
 // Adding route-instructions widget
